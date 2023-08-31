@@ -1,26 +1,31 @@
+import { useState } from "react";
 import React from "react";
 
+
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+//import rigoImage from "../../img/rigo-baby.jpg";
+
+
 
 //create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
-};
+function App() {
 
-export default Home;
+    const [value, SetValue]=useState(0)
+
+    return (
+
+        <div>
+            <h1>Simple React Counter</h1>
+			<p>{value}</p>
+            <button className="btn" onClick={(()=> SetValue=(value+1))}>Increase</button>
+            <button className="btn" onClick={(()=> SetValue=(value-1))}>Decrease</button>
+            <button className="btn" onClick={(()=> SetValue=(0))}>Reset</button>
+
+
+    </div>
+
+
+    );
+};
+export default App
+
