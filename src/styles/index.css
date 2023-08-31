@@ -10,3 +10,43 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.body{
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color:rgb(181, 190, 176)
+}
+.h2{
+    font-size: 40px;
+
+}
+.btn{
+    margin-right: 10px;
+    padding:5px;
+    border:none;
+    border-radius: 5px;
+    background-color: rgb(89, 174, 174);
+    color: aliceblue;
+    cursor: pointer;
+       
+}
+
+.bigCounter{
+
+    text-align: center;
+    background: black;
+    margin: auto;
+
+}
+
+.bigCounter div{
+    display: inline-block;
+    font-size: 60px;
+    line-height: 60px ;
+    background: #aca4a4;
+    color:white;
+    padding:20px;
+    margin:3px;
+
+
+}
