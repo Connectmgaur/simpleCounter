@@ -26,11 +26,11 @@ function SimpleCounter(props){
                 <div className="three">{props.digitThree}</div>
                 <div className="two">{props.digitTwo}</div>
                 <div className="one">{props.digitOne}</div>
+            
             </div>
-            <button className="btn" onClick={(()=> SetValue=(value+1))}>Increase</button>
-            <button className="btn" onClick={(()=> SetValue=(value-1))}>Decrease</button>
-            <button className="btn" onClick={(()=> SetValue=(0))}>Reset</button>
-            </div>
+            <div>
+            <button className="btn" onClick={props.resetValue}> Reset </button></div>
+        </div>
 
         );
 }
@@ -39,7 +39,8 @@ SimpleCounter.propTypes={
     digitFour:propTypes.number,
     digitThree:propTypes.number,
     digitTwo:propTypes.number,
-    digitOne: propTypes.number
+    digitOne: propTypes.number,
+    resetValue: propTypes.func
 };
 
 let counter=0
