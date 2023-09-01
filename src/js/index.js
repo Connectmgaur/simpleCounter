@@ -12,4 +12,4 @@ import SimpleCounter from "./component/SimpleCounter";
 
 
 //render your react application
-ReactDOM.render(<SimpleCounter />, document.querySelector("#app"));
+ReactDOM.render(<Home />, document.querySelector("#app"));
